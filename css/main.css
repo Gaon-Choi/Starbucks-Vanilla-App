@@ -1,3 +1,40 @@
+/* COMMON */
 body {
-    color: red;
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+img {
+    /* 디폴트로는 인라인 요소로 만들어져 있으나, 이를 블록으로 활용하겠다. 라는 뜻 */
+    display: block;
+}
+
+/* HEADER */
+header {
+    background-color: royalblue
+}
+
+header .inner {
+    background-color: orange;
+    width: 1100px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header .logo {
+    /* absolute를 썼다면 상위 요소 .inner에 position을 확인하는 습관! */
+    position: absolute;
+    /* 배치의 기준: 위아래 방향 정렬 => top, bottom
+        ㄴ auto를 통해 자동으로 계산하도록 설정
+     */
+    top: 0;
+    bottom: 0;
+
+    left: 0;
+
+    margin: auto;
 }
