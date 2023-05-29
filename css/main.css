@@ -88,6 +88,7 @@ header .sub-menu ul.menu li a:hover {
 header .sub-menu .search {
     background-color: red;
     height: 34px;
+    position: relative;
 }
 
 header .sub-menu .search input {
@@ -100,6 +101,8 @@ header .sub-menu .search input {
     outline: none;
     background-color: #fff;
     color: #777;
+    font-size: 12px;
+    transition: width .4s;
 }
 
 header .sub-menu .search input:focus {
@@ -108,5 +111,5 @@ header .sub-menu .search input:focus {
 }
 
 header .sub-menu .search .material-icons {
-    
+    position: absolute;
 }
